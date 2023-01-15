@@ -1,0 +1,18 @@
+//Prepare Objects
+const http = require('http');
+
+const hostname ="127.0.0.1";
+const port=3000;
+
+//Create Server
+const server=http.createServer((req,res) => {
+    res.statusCode   = 200;
+    res.setHeader("Content-Type","text/plain");
+    res.end("Welcome to NubeEra");
+});
+
+//Listen From Outside
+server.listen(port,hostname,()=>{
+    console.log(`Server running`);
+});
+
