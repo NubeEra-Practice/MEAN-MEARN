@@ -11,6 +11,8 @@ docker stop ContainerId
 
 docker rm ContainerId
 
+mkdir D:/DockerVolumes
+mkdir D:/DockerVolumes/MongoDB
 docker run --name mongodb -d -v D:/DockerVolumes/MongoDB:/data/db mongo
 
 
