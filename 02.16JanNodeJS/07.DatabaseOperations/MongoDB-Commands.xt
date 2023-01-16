@@ -1,0 +1,19 @@
+
+docker run --name mongodb -d mongodb
+
+docker run --name mongodb -d -p 27017:27017 mongo
+
+docker ps
+
+docker ps -a
+
+docker stop ContainerId
+
+docker rm ContainerId
+
+docker run --name mongodb -d -v D:/DockerVolumes/MongoDB:/data/db mongo
+
+
+
+D:/DockerVolumes/MongoDB
+
