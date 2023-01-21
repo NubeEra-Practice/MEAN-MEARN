@@ -1,0 +1,21 @@
+create file with this name -->  Dockerfile
+
+
+Save all code :
+---------------
+
+FROM mongo:latest
+
+RUN mongo &&\
+    use tewtdb &&\
+    db.createUser({user: 'user1', pwd: '123', roles[{role: 'dbOwner', db: 'tewtdb'}]})
+
+EXPOSE 27017
+
+CMD ["mongod"]
+
+
+Build Dockerfile:
+-----------------
+
+docker build -t mitchellday06/vt2mongo:latest . 
