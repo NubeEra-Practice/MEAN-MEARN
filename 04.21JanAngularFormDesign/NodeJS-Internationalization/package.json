@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "locale-man": "^0.0.5"
+  },
+  "scripts": {
+    "locale-man": "node node_modules/locale-man/ -l de,en -o src/locale"
+  }
+
+}
