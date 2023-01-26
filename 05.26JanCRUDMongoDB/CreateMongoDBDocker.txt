@@ -1,0 +1,10 @@
+docker run -d -p 27017:27017 --name mongocontainer1 -v /d/dockervolumes/mongodb:/data/db --env=MONGO_INITDB_ROOT_USERNAME=root --env=MONGO_INITDB_ROOT_PASSWORD=123 --env=MONGO_INITDB_DATABASE=development mongo:latest
+
+docker run -d -p 27017:27017 --name mongocontainer1 ^
+	-v /d/dockervolumes/mongodb:/data/db ^
+	--env=MONGO_INITDB_ROOT_USERNAME=root ^
+	--env=MONGO_INITDB_ROOT_PASSWORD=123 ^
+	--env=MONGO_INITDB_DATABASE=development ^
+	--env=MONGO_INITDB_USER=mongodb ^
+	--env=MONGO_INITDB_PWD=mongodb ^
+	mongo:latest
