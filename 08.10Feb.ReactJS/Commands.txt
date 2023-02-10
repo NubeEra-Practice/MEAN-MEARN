@@ -1,0 +1,32 @@
+1) Create React JS Project
+--------------------------
+npx create-react-app first-app
+
+2) Write Source Code:
+---------------------
+    2.1 Create Components
+        components
+            calculator.js
+                outputScreen.js
+                calculatorTitle.js
+                button.js
+                
+    2.2 Add Library in index.js file
+    import Calculator from './components/calculator.js'
+
+    2.3 Add Entry of your Component in index.js file
+    root.render(COMPONENT-TAG)
+
+3) Build Project
+----------------
+npm run build
+code --> public folder
+
+4) Run Server Project
+---------------------
+serve -s build
+
+5) Check in Browser
+-------------------
+Open Browser --->    http://localhost:3000
+
